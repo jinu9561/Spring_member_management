@@ -5,7 +5,6 @@ import practice.hellospring.domain.Member;
 
 import java.util.Optional;
 
-public interface SpringDataJpaMemberRepository extends JpaRepository<Member,
-        Long>, MemberRepository {
+public interface SpringDataJpaMemberRepository extends JpaRepository<Member, Long>, MemberRepository {
     Optional<Member> findByName(String name);
 }
